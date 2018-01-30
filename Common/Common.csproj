@@ -2,8 +2,10 @@
 
   <PropertyGroup>
     <TargetFrameworks>netcoreapp1.1;net452</TargetFrameworks>
-    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <BaseIntermediateOutputPath>..\build\$(MSBuildProjectName)\obj\$(Platform)\$(Configuration)\</BaseIntermediateOutputPath>
+    <OutputPath>..\build\$(MSBuildProjectName)\bin\$(Platform)\$(Configuration)\</OutputPath>
+    <DocumentationFile>$(OutputPath)$(AssemblyName).xml</DocumentationFile>
   </PropertyGroup>
-
 </Project>
