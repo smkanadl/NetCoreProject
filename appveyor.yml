@@ -5,7 +5,8 @@ platform: Any CPU
 configuration: Debug
 
 before_build:
-  - nuget restore
+  # Prefere dotnet restore over nuget restore due to "Any CPU" vs "AnyCPU" expansion of $(Platform) macro in out-of-source build configuration
+  - dotnet restore
 
 build:
   parallel: true
