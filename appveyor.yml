@@ -10,8 +10,3 @@ before_build:
 
 build_script:
   - dotnet build Project.sln
-
-test:
-  assemblies:
-    only: 
-      - Common.UnitTest.dll
