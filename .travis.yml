@@ -3,5 +3,5 @@ mono: latest
 dotnet: 2.1.4
 script:
  - dotnet restore
- - dotnet build Project.sln
+ - xbuild /p:Configuration=Debug Project.sln
  - dotnet test Common.UnitTest
