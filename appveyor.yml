@@ -1,6 +1,7 @@
 image: Visual Studio 2017
 
-platform: Any CPU
+# (https://github.com/scottdorman/cadru/pull/28, https://github.com/appveyor/ci/issues/1404, https://github.com/appveyor/ci/issues/1915)
+#platform: Any CPU
 
 configuration: Debug
 
@@ -10,3 +11,8 @@ before_build:
 
 build_script:
   - dotnet build Project.sln
+
+test:
+  assemblies:
+    only: 
+      - '**\*UnitTest.dll'
