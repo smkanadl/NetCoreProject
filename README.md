@@ -6,7 +6,7 @@
 
 [1]: https://travis-ci.org/smkanadl/NetCoreProject.svg?branch=master
 [2]: https://travis-ci.org/smkanadl/NetCoreProject
-[3]: https://ci.appveyor.com/api/projects/status/github/smkanadl/NetCoreProject?branch=master?svg=true
+[3]: https://ci.appveyor.com/api/projects/status/m2u1jhibnsbq0g99/branch/master?svg=true
 [4]: https://ci.appveyor.com/project/smkanadl/netcoreproject
 
 A playground for net core stuff.
