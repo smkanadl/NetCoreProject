@@ -12,6 +12,7 @@ namespace NetApp
         static void Main(string[] args)
         {
             Console.WriteLine(Mathematics.Sum(3, 5));
+            Console.WriteLine(Mathematics.Diff(3, 5));
         }
     }
 }
